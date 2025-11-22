@@ -1,0 +1,226 @@
+/*
+Author: The Bao Le
+Date: 11/09/2025
+File name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, ul, div, img, p, li, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #1f2633;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* Header */
+header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #1f2633;
+  height: auto;
+  padding: 0.5em 0;
+  text-decoration: none;
+}
+
+header a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.75em;
+}
+
+/* Navigation */
+nav{
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li{
+  font-size: 1.25em;
+  font-family: "Francois One", sans-serif;
+  border-top: 1px solid #fff;
+}
+
+nav li a{
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/*Show mobile class, hide tablet-desktop class */
+.mobile{
+    display: block;
+}
+
+.tablet-desktop{
+    display: none;
+}
+
+/* Main content */
+main{
+  clear: left;
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.05em;
+  font-family: "Roboto Slab", serif;
+}
+
+.tel-link{
+  background-color: #3a4864;
+  padding: 2%;
+  margin: 0.75em auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tel-link a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.35em;
+  display: block;
+}
+
+main h1 {
+  font-size: 2em;
+  color: #103a56;
+  margin-bottom: 0.4em;
+}
+
+main h2 {
+  font-size: 1.5em;
+  color: #144a6d;
+  margin: 0.9em 0 0.3em;
+}
+
+main h3, main h4 {
+  color: #335b74;
+  margin: 0.8em 0 0.25em;
+}
+
+main p, main ul, main ol{
+  margin-bottom: 0.9em;
+}
+
+main ul {
+  padding-left: 1.2em;
+}
+
+main li, main ol {
+  margin: 0.3em 0;
+}
+
+#announcement img {
+  border-radius: 8px;
+  margin: 0.5em 0 0.75em;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop{
+        display: block;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li{
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child{
+        border-right: none;
+    }
+
+    nav li a{
+        padding: 0.1em 0.25em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+
+    /*Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+
+    /*Desktop Viewport: Style rules for nav area */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul{
+        text-align: right;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+}
+
+/* Contact */
+#contact{
+  text-align: center;
+}
+
+#contact h3 a{
+  color: #666600;
+  text-decoration: none;
+}
+
+/* Footer */
+footer{
+  padding-top: 0.5em;
+}
+footer p{
+  font-size: 0.9em;
+  text-align: center;
+  color: #fff;
+  padding: 0.25em 1em;
+  font-family: "Roboto Slab", serif;
+}
+
+footer p a{
+  color: #fff;
+  text-decoration: none;
+}
