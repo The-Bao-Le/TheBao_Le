@@ -1,0 +1,566 @@
+/*
+Author: The Bao Le
+Date: 11/09/2025
+File name: styles.css
+*/
+
+/* =========================
+   Base reset & typography
+   ========================= */
+body,
+header,
+nav,
+main,
+footer,
+h1,
+h2,
+h3,
+ul,
+div,
+img,
+p,
+li,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: #1f2633;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   Header & navigation
+   ========================= */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #1f2633;
+  height: auto;
+  padding: 0.5em 0;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.75em;
+}
+
+/* Navigation */
+nav {
+  padding: 1%;
+  margin-bottom: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  font-size: 1.25em;
+  font-family: "Francois One", sans-serif;
+  border-top: 1px solid #fff;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+/* Show mobile class, hide tablet-desktop class by default */
+.mobile {
+  display: block;
+}
+
+.tablet-desktop {
+  display: none;
+}
+
+/* =========================
+   Main content & typography
+   ========================= */
+main {
+  clear: left;
+  background-color: #fff;
+  padding: 2%;
+  font-size: 1.05em;
+}
+
+.tel-link {
+  background-color: #3a4864;
+  padding: 2%;
+  margin: 0.75em auto;
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tel-link a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.35em;
+  display: block;
+}
+
+main h1 {
+  font-size: 2em;
+  color: #103a56;
+  margin-bottom: 0.4em;
+}
+
+main h2 {
+  font-size: 1.5em;
+  color: #144a6d;
+  margin: 0.9em 0 0.3em;
+}
+
+main h3,
+main h4 {
+  color: #335b74;
+  margin: 0.8em 0 0.25em;
+}
+
+main p,
+main ul,
+main ol {
+  margin-bottom: 0.9em;
+}
+
+main ul {
+  padding-left: 1.2em;
+}
+
+/* Apply spacing to list items (fixes old main li, main ol rule) */
+main li,
+main ol li {
+  margin: 0.3em 0;
+}
+
+/* =========================
+   Layout helpers & sections
+   ========================= */
+#container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Generic content sections */
+#about,
+#article,
+#trainers,
+#contact {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#about img,
+.equip {
+  margin: 1em auto;
+}
+
+/* Staff images */
+.equip {
+  border-radius: 8px;
+}
+
+/* Announcement section */
+#announcement ul {
+  padding-left: 1.2em;
+}
+
+#announcement li {
+  margin-bottom: 0.4em;
+}
+
+/* =========================
+   Contact / booking form
+   ========================= */
+form {
+  margin-top: 1em;
+  text-align: left;
+}
+
+fieldset {
+  border: 1px solid #d0d4dd;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: 600;
+  color: #144a6d;
+}
+
+label {
+  display: block;
+  margin-top: 0.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.4em;
+  margin-top: 0.25em;
+  border-radius: 4px;
+  border: 1px solid #c2c7d3;
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  margin-top: 0.75em;
+  padding: 0.6em 1.4em;
+  border-radius: 4px;
+  border: none;
+  background-color: #3a4864;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #253145;
+}
+
+#formMessage {
+  margin-top: 0.75em;
+  font-weight: 600;
+}
+
+.small-print {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 0.5em;
+}
+
+/* Contact section text */
+#contact {
+  text-align: center;
+}
+
+#contact h3 a {
+  color: #666600;
+  text-decoration: none;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  padding-top: 0.5em;
+}
+
+footer p {
+  font-size: 0.9em;
+  text-align: center;
+  color: #fff;
+  padding: 0.25em 1em;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* =========================
+   Home page
+   ========================= */
+
+/* Shared cards on home page */
+.home-card {
+  background-color: #f5f7fb;
+  border-radius: 10px;
+  padding: 1em 1.2em;
+  margin: 1em 0;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Hero image + intro */
+.home-hero-img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+}
+
+.home-hero-text {
+  margin-top: 0.75em;
+  text-align: center;
+}
+
+.home-hero-text h1 {
+  margin-bottom: 0.25em;
+}
+
+/* Promo image */
+.promo img {
+  border-radius: 10px;
+}
+
+/* Opening hours section */
+.home-opening {
+  margin: 1.5em 0 0.5em;
+  border-top: 1px solid #dde2ea;
+  padding-top: 1em;
+}
+
+/* Desktop/tablet hero grid */
+.home-hero-grid {
+  display: flex;
+  gap: 1.5em;
+  align-items: stretch;
+  margin-bottom: 1.5em;
+}
+
+.home-hero-left,
+.home-hero-right {
+  flex: 1;
+}
+
+.home-hero-left .home-hero-img {
+  height: 100%;
+  max-height: 320px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Middle row (promo + package) */
+.home-bottom-row {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.home-bottom-row .promo {
+  flex: 0 0 36%;
+  text-align: center;
+}
+
+.home-bottom-row .home-annual {
+  flex: 1;
+}
+
+/* Stack hero & bottom row on narrower tablets */
+@media screen and (max-width: 900px) {
+  .home-hero-grid,
+  .home-bottom-row {
+    flex-direction: column;
+  }
+
+  .home-bottom-row .promo {
+    flex: 1;
+  }
+}
+
+/* =========================
+   About page
+   ========================= */
+.about-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.about-hero-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-hero-image img {
+  border-radius: 10px;
+  max-height: 320px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Reusable soft card style for sections */
+.about-card {
+  background-color: #f5f7fb;
+  border-radius: 10px;
+  padding: 1em 1.2em;
+  margin-bottom: 1.1em;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Tech list emphasis */
+.about-tech ul {
+  margin-top: 0.4em;
+}
+
+.about-tech li strong {
+  color: #144a6d;
+}
+
+/* Tech images grid – add cropping + rounding */
+.tech-images {
+  display: grid;
+  gap: 0.75em;
+}
+
+.tech-images img {
+  border-radius: 10px;
+  height: 210px;
+  object-fit: cover;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Call-to-action paragraph */
+.about-cta {
+  margin-top: 0.75em;
+  text-align: center;
+}
+
+/* =========================
+   Staff page
+   ========================= */
+.staff-member {
+  background-color: #f5f7fb;
+  border-radius: 10px;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.staff-photo {
+  margin-bottom: 0.75em;
+}
+
+/* Staff images: full on mobile/tablet */
+#trainers .equip {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.staff-info h2 {
+  margin-top: 0;
+}
+
+/* =========================
+   Responsive tweaks
+   ========================= */
+
+/* Tablet (≥630px): show tablet-desktop nav layout */
+@media screen and (min-width: 630px) {
+  .tablet-desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  header {
+    position: static;
+    padding-bottom: 2%;
+  }
+
+  nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #fff;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  nav li a {
+    padding: 0.1em 0.25em;
+  }
+}
+
+/* Desktop (≥769px): header/nav layout + padding + about/staff grids */
+@media screen and (min-width: 769px) {
+  /* Header/nav two-column layout */
+  header {
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+  }
+
+  nav {
+    float: right;
+    width: 70%;
+    margin: 4em 1em 0 0;
+  }
+
+  nav ul {
+    text-align: right;
+  }
+
+  nav li {
+    border: none;
+  }
+
+  nav li a {
+    padding: 0.5em 1em;
+  }
+
+  /* Main padding */
+  main {
+    padding: 2% 4%;
+  }
+
+  /* About hero side-by-side */
+  .about-hero {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .about-hero-text {
+    flex: 2;
+    padding-right: 1.5em;
+  }
+
+  .about-hero-image {
+    flex: 1.4;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Tech images: 3-column grid */
+  .tech-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Staff: image left, text right */
+  .staff-member {
+    display: flex;
+    gap: 1.25em;
+    align-items: flex-start;
+  }
+
+  .staff-photo {
+    flex: 0 0 38%;
+    margin-bottom: 0;
+  }
+
+  .staff-info {
+    flex: 1;
+  }
+}

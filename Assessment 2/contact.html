@@ -1,0 +1,137 @@
+<!doctype html>
+<!--This website template was created by: The Bao Le-->
+<html lang="en">
+<head>
+  <title>100SMILES Dental Care</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
+  
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- Header: logo/site name -->
+        <header>
+        <a href="index.html"><h1>100SMILES Dental Care</h1></a>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="staff.html">Our Staff</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="contact.html">Contact &amp; Booking</a></li>
+        </ul>
+        </nav>
+
+        <!-- Main content -->
+        <main>
+        <div id="contact">
+            <h1>Contact & Booking</h1>
+
+            <h2>Ready to get started? Contact us today</h2>
+            <p class="tel-link"><a href="tel:+61750005599">(07) 5000 5599</a></p>
+            <h3>Fax: 07 4567 9999</h3>
+            <h3>Email: <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></h3>
+            <h3>Visit us at: 33 Fantail Street, Razole, Queensland</h3>
+
+            <h2>Trading hours</h2>
+            <p>Monday - Friday: 8:30am - 6:30pm</p>
+            <p>Saturday - Sunday: 8:30am - 1pm</p>
+
+            <h2 id="booking-form">Online Booking Form</h2>
+            <p>
+            Book online to receive a 25% discount on your next dental visit.
+            Fields marked with * are required.
+            </p>
+
+            <form id="bookingForm" novalidate>
+            <fieldset>
+                <legend>Patient details</legend>
+
+                <label for="firstName">First name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Appointment details</legend>
+
+                <label for="preferredDate">Preferred date *</label>
+                <input type="date" id="preferredDate" name="preferredDate" required>
+
+                <label for="preferredTime">Preferred time *</label>
+                <input type="time" id="preferredTime" name="preferredTime" required>
+
+                <label for="service">Reason for visit *</label>
+                <select id="service" name="service" required>
+                <option value="">Please select</option>
+                <option value="checkup">Routine check-up / cleaning</option>
+                <option value="emergency">Emergency visit</option>
+                <option value="implants">Dental implants</option>
+                <option value="orthodontics">Orthodontics</option>
+                <option value="cosmetic">Cosmetic dentistry</option>
+                <option value="child">Child dental visit</option>
+                <option value="other">Other</option>
+                </select>
+
+                <label for="preferredDentist">Preferred dentist</label>
+                <select id="preferredDentist" name="preferredDentist">
+                <option value="">No preference</option>
+                <option value="grey">Dr Johanna Grey</option>
+                <option value="carter">Dr Emily Carter</option>
+                <option value="sloan">Dr Benedict Sloan</option>
+                </select>
+
+                <label for="notes">Additional notes</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Tell us anything we should know before your visit."></textarea>
+
+                <label for="hearAbout">How did you hear about us?</label>
+                <select id="hearAbout" name="hearAbout">
+                <option value="">Please select</option>
+                <option value="friend">Friend / family</option>
+                <option value="search">Search engine</option>
+                <option value="social">Social media</option>
+                <option value="signage">Local signage</option>
+                <option value="other">Other</option>
+                </select>
+            </fieldset>
+
+            <p class="small-print">
+                Free dental checkup event: Saturday 5th July from 9 am.
+                For this event you can also call 07 1327 5599, email
+                admin@100smilesdentalcare.com.au, or visit 195 Fantail Street, Cairnville, Queensland.
+            </p>
+
+            <button type="submit">Submit booking</button>
+            <p id="formMessage" aria-live="polite"></p>
+            </form>
+        </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p><a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></p>
+        </footer>
+        
+    </div><!-- /#container -->
+
+</body>
+</html>
